@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #eeeeee;
+}
+body{
+    background-color: #393e46;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    width: 12px;
+}
+body::-webkit-scrollbar-track{
+    background-color: #232931;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #999;
+    border-radius: 8px;
+    border: 1px solid #232931;
+}
+
+/*------HEADER------*/
+header{
+    background-color: #232931;
+    height: 80px;
+}
+.container--header{
+    width: 90%;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+#logo:hover{
+    cursor:default;
+}
+#logo span{
+    color: #4ecca3;
+}
+#menu{
+    display: flex;
+}
+#menu li{
+    list-style: none;
+}
+#menu li a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #eeeeee;
+    transition: all ease 0.3s;
+}
+#menu li a:hover{
+    opacity: 0.6;
+}
+.btn--mobile{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: #eeeeee;
+    font-size: 25px;
+}
+
+/*-----MAIN-----*/
+.section{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+section{
+    width: 90%;
+    margin: auto;
+}
+#profile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    height: calc(60vh);
+    flex-wrap: wrap;
+}
+.profile--left{
+    width: 200px;
+    height: 200px;
+    background-color: #232931;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.photo img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.profile--right h1{
+    font-size: 30px;
+}
+.profile--right h2{
+    color: #999;
+}
+
+#about-me{
+    display: flex;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.about--left, .about--right{
+    flex: 1;
+}
+.about--left{
+    text-align: center;
+    font-size: 25px;
+}
+#knowledge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.title--knowledge, .title--projects, .contact--title{
+    font-size: 19px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+}
+.icons--knowledge{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.svg{
+    background-color: #232931;
+    display: flex;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all ease 0.5s;
+}
+.svg:hover{
+    border: 1px solid #4ecca0;
+    transition: all ease 0.5s;
+    transform: scale(1.1);
+}
+.icons--knowledge img{
+    width: 80px;
+    height: 80px;
+}
+#knowledge .button{
+    display: block;
+    background-color: #232931;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 30px;
+    border: 2px solid #232931;
+    transition: all ease 0.5s;
+}
+#knowledge .button:hover{
+    transition: all ease 0.5s;
+    border: 2px solid #4ecca3;
+    transform: scale(1.2);
+}
+.myprojects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.container--project{
+    background-color: #232931;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.container--project .img--project img{
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.container--project h1{
+    margin-bottom: 10px;    
+}
+.container--project .button--1, .button--2{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.container--project .button--1{
+    background-color: #393e46;
+    margin-bottom: 10px;
+    transition: all ease 0.5s;
+    font-size: 15px;
+    cursor: pointer;
+}
+.container--project .button--2{
+    background-color: #e85b48;
+    border: 1px solid transparent;
+    transition: all ease 0.5s;
+}
+.container--project .button--1:hover{
+    border:1px solid #4ecca0;
+    transition: all ease 0.5s;
+}
+.container--project .button--2:hover{
+    border: 1px solid #e85b48;
+    background-color: #393e46;
+    transition: all ease 0.5s;
+}
+.icons--contact{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.icons--contact div{
+    transition: all ease 0.5s;
+}
+.icons--contact div p{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+#whatsapp p{
+    color: #0D9F16;
+}
+#email p{
+    color: #EA4335;
+}
+#linkedin p{
+    color: #0A66C2;
+}
+#email, #linkedin, #whatsapp{
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#email img, #linkedin img, #whatsapp img{
+    width: 80px;
+}
+.icons--contact div:hover{
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+footer{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.footer--right{
+    display: flex;
+    gap: 30px;
+}
+.footer--right i{
+    font-size: 30px;
+    transition: all ease 0.5s;
+}
+.footer--right i:hover{
+    transform: scale(1.2);
+    transition: all ease 0.5s;
+}
+
+/*-------Responsividade-------*/
+@media(max-width: 790px){
+    .profile--right h1{
+        font-size: 22px;
+    }
+    .profile--right h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .profile--left{
+        width: 150px;
+        height: 150px;
+    }
+    .about--left, .title--knowledge, .title--projects, .contact--title{
+        text-align: center;
+        font-size: 16px;
+    }
+    .about--right p{
+        font-size: 15px;
+    }
+    
+}
+@media(max-width:425px){
+    .icons--knowledge img{
+        width: 47px;
+        height: 47px;
+    }
+    .icons--knowledge p{
+        font-size: 11px;
+    }
+    .svg{
+        padding: 35px;
+    }
+    .icons--contact{
+        gap: 10px;
+    }
+    .footer--right i{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:383px){
+    header{
+        height: 60px;
+    }
+    .profile--right h1{
+        font-size: 18px;
+    }
+    .profile--right h2{
+        font-size: 16px;
+    }
+    .about--left h1, .title--knowledge h1, .title--projects, .contact--title{
+        font-size: 17px;
+    }
+    .about--right p{
+        font-size: 14px;
+    }
+    .icons--contact{
+        gap: 5px;
+    }
+    #email img, #linkedin img, #whatsapp img{
+        width: 60px;
+    }
+    #whatsapp p, #linkedin p, #email p{
+        font-size: 12px;
+    }
+    .container--project .img--project img{
+        width: 200px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    .container--project{
+        font-size: 12px;
+        margin-bottom: 10px;    
+    }
+    .footer--right{
+        gap: 10px;
+    }
+    .footer--right i{
+        font-size: 15px;
+    }
+
+}
+@media(max-width:600px){
+    .btn--mobile{
+        display: flex;
+    } 
+    #logo{
+        font-size: 20px;
+    }
+    #menu{
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 80px;
+       right: 0;
+       background-color: #393e46;
+       text-align: center;
+       z-index: 999;
+       height: 0px;
+       transition: .6s;
+       visibility: hidden;
+       overflow-y: hidden;
+    }
+    nav.active #menu{
+        height: calc(100vh - 80px);
+        visibility: visible;
+    }
+    #menu li a{
+        margin: auto;
+        width: 90%;
+        padding: 15px;
+        border-bottom:1px solid rgba(255, 255, 255, 0.3)
+    }
+    .profile--right{
+        margin-top: -60px;
+    }
+    #about-me{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .about--left{
+        margin-bottom: 30px;
+    }
+}

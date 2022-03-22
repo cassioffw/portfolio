@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CassioDev - Portfólio</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="icon" href="assets/img/icons/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container--header">
+            <div id="logo"><span>C</span>assio-<span>D</span>ev</div>
+            <nav>
+                <button class="btn--mobile"><i class="fa-solid fa-bars"></i></button>
+                <ul id="menu">
+                    <li><a href="#knowledge" onclick="closeMenu()">Conhecimentos</a></li>
+                    <li><a href="#projects" onclick="closeMenu()">Projetos</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="section">
+            <section id="profile">
+                <div class="profile--left">
+                    <div class="photo">
+                        <img src="assets/img/profile.jpg" alt="">
+                    </div>
+                </div>
+                <div class="profile--right">
+                    <h1>Olá, sou Cassio Mariano!</h1>
+                    <h2>Front-end Developer</h2>
+                </div>
+            </section>
+        </div>
+        <div class="section">
+            <section id="about-me">
+                <div class="about--left">
+                    <h1>Sobre Mim</h1>
+                </div>
+                <div class="about--right">
+                    <p>Meu nome é Cassio Mariano de Freitas, sou estudante do curso de Ciências da Computação na Universade Estadual do Paraná - Apucarana. Sou apaixonado por desenvolvimento WEB, meu foco é em Front-end. 
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <div class="section">
+            <section id="knowledge">
+                <div class="title--knowledge">
+                    <h1>Conhecimentos</h1>
+                </div>
+                <div class="icons--knowledge">
+                    <div class="svg"><img src="assets/img/icons/git.svg" alt="html icon">
+                        <p>GIT</p>
+                    </div>
+                    <div class="svg"><img src="assets/img/icons/html.svg" alt="html icon">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="svg"><img src="assets/img/icons/css.svg" alt="html icon">
+                        <p>CSS3</p>
+                    </div>
+                    <div class="svg"><img src="assets/img/icons/js.svg" alt="html icon">
+                        <p>Javascript</p>
+                    </div>
+                    <div class="svg"><img src="assets/img/icons/react.svg" alt="html icon">
+                        <p>ReactJs</p>
+                    </div>
+                </div>
+                <a href="assets/extra/curriculo_cassio_mariano.pdf" download="" class="button">Baixe meu CV</a>
+            </section>
+        </div>
+
+        <div class="section">
+            <section id="projects">
+                <div class="title--projects">
+                    <h1>Projetos</h1>
+                </div>
+                <div class="myprojects">
+                    <div class="container--project">
+                        <div class="img--project"><img src="assets/img/qrcode.JPG" alt=""></div>
+                        <h1>Gerador de QRCode</h1>
+                        <a href="https://cassioffw.github.io/qrcodegenerator/" target="_blank" class="button--2">Ir para o site</a>
+                    </div>
+                    <div class="container--project">
+                        <div class="img--project"><img src="assets/img/Netflix.jpg" alt=""></div>
+                        <h1>Clone do Netflix (ReactJs)</h1>
+                        <a href="https://cassioffw.github.io/NetflixCloneReact/" target="_blank" class="button--2">Ir para o site</a>
+                    </div>
+                    <div class="container--project">
+                        <div class="img--project"><img src="assets/img/medicenter.JPG" alt=""></div>
+                        <h1>MediCenter</h1>
+                        <a href="https://cassioffw.github.io/medicenterB7WEB/" target="_blank" class="button--2">Ir para o site</a>
+                    </div>
+                    <div class="container--project">
+                        <div class="img--project"><img src="assets/img/google.JPG" alt=""></div>
+                        <h1>Clone página do Google</h1>
+                        <a href="https://cassioffw.github.io/clonedogoogle/" target="_blank" class="button--2">Ir para o site</a>
+                    </div>
+                    <div class="container--project off">
+                        <div class="img--project"><img src="assets/img/default.JPG" alt=""></div>
+                        <h1>Em breve...</h1>
+                        <a href="" class="button--2">Ir para o site</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section">
+            <section id="contact">
+                <div class="contact--title">
+                    <h1>Contato</h1>
+                </div>
+                <div class="icons--contact">
+                    <div id="whatsapp"><a href="https://wa.me/5543996849053" target="_blank"><img src="assets/img/icons/whatsapp.svg" alt=""> 
+                        <p>Whatsapp</p>
+                        </a>
+                    </div>
+                    <div id="email"><a href="mailto:cassiomariano774@gmail.com" mail><img src="assets/img/icons/gmail.svg" alt="">
+                            <p>Email</p>
+                        </a>
+                    </div>
+                    <div id="linkedin"><a href="https://www.linkedin.com/in/cassio-mariano1/" target="_blank"><img src="assets/img/icons/linkedin-icon.svg" alt="">
+                            <p>Linkedin</p>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer--left">
+            © Cassio Mariano - 2022
+        </div>
+        <div class="footer--right">
+            <a href="https://www.facebook.com/cassiomariano01/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/cassioffw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/cassiofreitas01/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/60a33de990.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
