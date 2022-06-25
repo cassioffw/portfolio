@@ -15,3 +15,8 @@ function closeMenu(){
         nav.classList.remove('active');
     }
 }
+function scrollFunc(){
+    if(nav.classList.contains('active')){
+         window.scroll(0,0)
+    }
+}
